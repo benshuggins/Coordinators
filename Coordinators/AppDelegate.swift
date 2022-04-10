@@ -4,6 +4,7 @@
 //
 //  Created by Ben Huggins on 4/9/22.
 //
+// Becuase the initial checkbox is being set inside of maion.storybaord it means that the maon.storyboard is still handoling the app launch and the problem is wiht the scenedelegate.
 
 import UIKit
 

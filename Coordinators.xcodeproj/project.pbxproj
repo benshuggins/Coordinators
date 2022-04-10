@@ -17,6 +17,7 @@
 		CE6D15D628023E5300CB28DA /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D15D528023E5300CB28DA /* Storyboarded.swift */; };
 		CE6D15D828023F6700CB28DA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D15D728023F6700CB28DA /* MainCoordinator.swift */; };
 		CE91936C2803499600055B74 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91936B2803499600055B74 /* BuyViewController.swift */; };
+		CE91936F28034A7000055B74 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91936E28034A7000055B74 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE6D15D528023E5300CB28DA /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		CE6D15D728023F6700CB28DA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		CE91936B2803499600055B74 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		CE91936E28034A7000055B74 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +66,36 @@
 		CE6D15BE2801F0BC00CB28DA /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				CE6D15D728023F6700CB28DA /* MainCoordinator.swift */,
 				CE6D15BF2801F0BC00CB28DA /* AppDelegate.swift */,
-				CE6D15C12801F0BC00CB28DA /* SceneDelegate.swift */,
-				CE6D15C32801F0BC00CB28DA /* ViewController.swift */,
+				CE6D15CA2801F0C000CB28DA /* LaunchScreen.storyboard */,
 				CE6D15C52801F0BC00CB28DA /* Main.storyboard */,
 				CE6D15C82801F0C000CB28DA /* Assets.xcassets */,
-				CE6D15CA2801F0C000CB28DA /* LaunchScreen.storyboard */,
+				CE6D15C12801F0BC00CB28DA /* SceneDelegate.swift */,
+				CE91936D28034A4D00055B74 /* Coordinators */,
+				CE91937028034CB800055B74 /* Screens */,
 				CE6D15CD2801F0C000CB28DA /* Info.plist */,
-				CE6D15D32802275E00CB28DA /* Coordinator.swift */,
-				CE6D15D528023E5300CB28DA /* Storyboarded.swift */,
-				CE91936B2803499600055B74 /* BuyViewController.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CE91936D28034A4D00055B74 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D15D728023F6700CB28DA /* MainCoordinator.swift */,
+				CE6D15D528023E5300CB28DA /* Storyboarded.swift */,
+				CE6D15D32802275E00CB28DA /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CE91937028034CB800055B74 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D15C32801F0BC00CB28DA /* ViewController.swift */,
+				CE91936B2803499600055B74 /* BuyViewController.swift */,
+				CE91936E28034A7000055B74 /* CreateAccountViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +173,7 @@
 				CE6D15D828023F6700CB28DA /* MainCoordinator.swift in Sources */,
 				CE6D15C42801F0BC00CB28DA /* ViewController.swift in Sources */,
 				CE6D15D628023E5300CB28DA /* Storyboarded.swift in Sources */,
+				CE91936F28034A7000055B74 /* CreateAccountViewController.swift in Sources */,
 				CE6D15C02801F0BC00CB28DA /* AppDelegate.swift in Sources */,
 				CE91936C2803499600055B74 /* BuyViewController.swift in Sources */,
 				CE6D15C22801F0BC00CB28DA /* SceneDelegate.swift in Sources */,
@@ -319,7 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -346,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
